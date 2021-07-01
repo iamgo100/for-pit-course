@@ -10,3 +10,14 @@ services:
         ports: 
             - "8888:80"
         command: python3 main.py
+    
+    web:
+        build: .
+        image: python:3-alpine
+        environment: 
+            - HOST=84.38.181.80
+            - PORT=456
+            - HELLO_MESSAGE=Hello in chat 1
+        ports: 
+            - "8888:456"
+        command: python3 main.py
