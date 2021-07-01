@@ -1,14 +1,12 @@
 version: '3'
 services: 
     web:
+        build: .
         image: python:3-alpine
-        working_dir: /home/chat
-        volumes:
-            - /chat:/home/chat
         environment: 
             - HOST=84.38.181.80
             - PORT=80
             - HELLO_MESSAGE=Hello in chat 1
         ports: 
             - "8888:80"
-        command: python chat/main.py
+        command: python3 main.py
