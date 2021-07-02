@@ -1,0 +1,19 @@
+{
+  "name": "passport-oauth",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №7 по прикладным ИТ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Elkina Galina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "passport-yandex": "0.0.5"
+  }
+}
